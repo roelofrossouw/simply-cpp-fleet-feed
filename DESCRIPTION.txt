@@ -1,0 +1,1 @@
+C++20 device positions to third-party fleet systems: their payload formats, sign-in styles, and HTTP, Kafka and SFTP delivery

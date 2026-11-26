@@ -1,0 +1,12 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/SimplyCppFunctions.cmake")
+include(CMakeFindDependencyMacro)
+
+find_or_install_package(sc-core simply-cpp-dev simply-cpp 4.0.0)
+# The static library links the clients it delivers with.
+find_or_install_package(sc-http simply-cpp-http-dev simply-cpp-http 4.0.0)
+find_or_install_package(sc-kafka simply-cpp-kafka-dev simply-cpp-kafka 6.0.0)
+find_or_install_package(sc-sftp simply-cpp-sftp-dev simply-cpp-sftp 4.0.0)
+
+include("${CMAKE_CURRENT_LIST_DIR}/sc-fleet-feedTargets.cmake")
